@@ -1,0 +1,52 @@
+body{
+   min-height: 100vh;
+   display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.container{
+ position: relative;
+ max-width: 370px;
+ width: 100%;
+ padding: 25px;
+ border-radius: 8px;
+ background-color: #ffffff;
+}
+.container header{
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+form .field{
+ margin-bottom: 20px;
+}
+.container form{
+  margin-top: 30px;
+}
+
+form .input-field{
+  position: relative;
+  height: 55px;
+  width: 100%;
+}
+.input-field input{
+ height: 100%;
+ width: 100%;
+ outline: none;
+ border: none;
+ border-radius: 8px;
+ padding: 0 15px;
+ border: 1px solid #d1d1d1;
+}
+
+.field .error{
+ display: flex;
+ align-items: center;
+ margin-top: 6px;
+ color: #d93025;
+ font-size: 13px;
+}
+.error .error-icon{
+  margin-right: 6px;
+  font-size: 15px ;
+}
