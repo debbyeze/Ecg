@@ -8,6 +8,11 @@
 main{
 	background-image:linear-gradient(to right, #c7dcfa ,  #8cc5e6 );
 }
+fieldset{
+	background-image:linear-gradient(to right, #a1cee9 60%,#79bce2,#269de2  );
+
+
+}
 legend{
  padding: 15px;
 }
@@ -60,4 +65,7 @@ display: flex;
 }
 .fw-b{
  font-weight: bold;
+}
+footer{
+ text-align: center;
 }

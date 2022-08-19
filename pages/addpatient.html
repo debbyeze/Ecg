@@ -27,7 +27,7 @@
       <div class="container">
        <div>
            <label for="id">National ID</label>
-           <input type="number" id="id" required>
+           <input type="number" id="id" minlength="9" required>
         </div>
          <div>
             <label for="gender">Gender</label>
@@ -171,14 +171,14 @@
  </div>
 
  <aside>
-        <fieldset>
-          <legend>Personal Photo</legend>
+        <fieldset id="photofield">
+          <legend id="photolegend">Personal Photo</legend>
           <div>
             <img id="output" width="100" height="100">
            <input type="file" id="file" accept="image/*" name="image" onchange="loadFile(event)" value="import">
         </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="contactfield">
         <legend>Patient Contact</legend>
         <div>
             <label for="faxtype">Type</label>
@@ -205,6 +205,16 @@
       <input type="submit" value="Save" class="bglightblue txtblue" form="personalinfo">
    </div>
 
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="dflex jcc">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Form Saved!</p>
+  </div>
+  </div>
+
+</div>
 <footer class="bglightblue dflex jcc">Developed in Computer science Department, Faculty of Science, Rivers state University</footer>
 </main>
     <script src="/pages/addpatient.js"></script>
