@@ -5,8 +5,25 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+main{
+	background-image:linear-gradient(to right, #c7dcfa ,  #8cc5e6 );
+}
+legend{
+ padding: 15px;
+}
+button{
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+     box-shadow: 5px 2px 5px #98c0f7;
+
+}
+.db{
+display: block;
+}
 .bglightblue{
- background-color:  #98c0f7;
+ background-color:  #97d0f1;
 }
 .bglighterblue{
  background-color:  #c7dcfa;

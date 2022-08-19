@@ -1,6 +1,10 @@
 body{
  min-height: 100vh;
 }
+nav{
+	background-image:linear-gradient(to left, #c7dcfa ,  #8cc5e6 );
+
+}
 nav > div > p{
   font-weight: 500;
  padding: 5px;
@@ -16,6 +20,7 @@ nav > div > img{
   height: 100px;
   margin: auto;
   display: block;
+  
 }
 main{
  min-height: 67.5vh;

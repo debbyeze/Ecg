@@ -1,8 +1,13 @@
 body{
-   min-height: 100vh;
-   display: flex;
+   height: 100vh;
+   
+}
+section{
+ display: flex;
  align-items: center;
  justify-content: center;
+ align-items: center;
+
 }
 .container{
  position: relative;
@@ -49,4 +54,11 @@ form .input-field{
 .error .error-icon{
   margin-right: 6px;
   font-size: 15px ;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }

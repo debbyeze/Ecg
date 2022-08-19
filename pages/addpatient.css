@@ -1,3 +1,4 @@
+
 nav h4{
   font-weight: 500;
 }
@@ -9,38 +10,94 @@ nav h4{
   color:black;
 }
 section{
-  display: flex;
-  justify-content: space-between;
-}
-.form{
 display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.form{
 flex: 3;
-margin: 20px;
+ margin:20px
 }
 label{
-    display: block;
     font-weight: bold;
      color: rgb(63, 61, 61);
+    
 
 }
 div , input{
 margin: 5px 0 5px 0;
+
+
 }
-input[type=submit]{
-   display: block;
+
+input[type=submit], input[type=button]{
+   width: 80px;
    padding: 3px;
    border: none;
-   color: #ffffff;
-   border-radius: 10px;
+   font-size:1rem;
+   font-weight: 400;
+   border-radius:2px;
+   box-shadow: 5px 2px 5px #98c0f7;
+   margin: 5px;
+   
    
 }
-input{
+fieldset{
+ border-radius: 5px;
+ border-color: #98c0f7;
+ padding: 10px;
+}
+legend{
+ font-size: small;
+}
+form > fieldset{
+display: flex;
+justify-content: space-between;
+
+}
+form > fieldset > .container{
+ flex: 1;
+
+}
+input, select{
    padding: 10px;
    outline: none;
-   color: grey;
-   border: 2px solid #e7eef8;
+   color: black;
    background-color: #e7eef8;
+ width: 60%;
+ border-radius: 8px;
+ border: 1px solid #d1d1d1;
+}
+form > fieldset > .container:nth-child(1n){
+  margin-right: 30px;
+}
+.container > div{
+  display: flex;
+  justify-content: space-between;
 }
 aside{
  flex: 1;
+ margin-top: 15px;
+}
+aside > fieldset:nth-child(2n){
+   margin-top: 18vh;
+}
+.mobileemail{
+ background-color: #ffffff;
+ height: 20vh;
+ padding: 15px;
+ height: 28.5vh;
+}
+.mobileemail > label{
+ display: block;
+ margin-bottom: 10px;
+}
+.submitbtn{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ margin-bottom: 20px;
 }
