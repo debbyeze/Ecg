@@ -171,3 +171,17 @@ display: block;
   text-decoration: none;
   cursor: pointer;
 }
+
+/*Peace Ewor Code begins here*/
+#usernameErr, #usernameErr1{
+  display: none;
+  margin: auto;
+  font-size: 9px;
+  color: red;
+}
+#EmailID{
+  display: none;
+  margin: auto;
+  font-size: 9px;
+  color: red;
+}
