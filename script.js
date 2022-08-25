@@ -1,4 +1,3 @@
-
  let userName = document.getElementById('firstname');
  let LastName = document.getElementById('lastname');
  let loginForm = document.getElementById("personalinfo");
@@ -6,6 +5,7 @@
  let usernameErr1 = document.getElementById("usernameErr1");
  let Email = document.getElementById('email');
  let PhoneNumber = document.getElementById('tel');
+
 
 
  userName.addEventListener('input', function(e){
@@ -112,4 +112,5 @@ Phone.addEventListener('input', function(e){
     
  });
 
+ 
  

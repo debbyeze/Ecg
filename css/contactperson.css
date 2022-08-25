@@ -24,10 +24,16 @@ flex: 1;
 position: relative !important;
 bottom: 0px;
 }
-#firstNameErr{
+#firstNameErr, #LastNameErr, #numberror, #Natiderr{
   font-size: 9px;
   color: red;
   display: none;
   margin: auto;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
+}
+#Nattid{
+  width:262px;;
+}
+#firstname1{
+  width: 262px;
 }
