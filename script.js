@@ -1,12 +1,12 @@
 
  let userName = document.getElementById('firstname');
  let LastName = document.getElementById('lastname');
- let loginForm = document.getElementById("login-form");
- let usernameErr = document.getElementById("usernameErr")
- let usernameErr1 = document.getElementById("usernameErr1")
+ let loginForm = document.getElementById("personalinfo");
+ let usernameErr = document.getElementById("usernameErr");
+ let usernameErr1 = document.getElementById("usernameErr1");
+ let Email = document.getElementById('email');
+ let PhoneNumber = document.getElementById('tel');
 
-
- 
 
  userName.addEventListener('input', function(e){
     let pattern = /^[\w]{6,8}$/;
@@ -36,33 +36,80 @@ usernameErr.style.display = 'block'
     }
     
  });
- function validation()
- {
-     
-     let Email = document.getElementById('email').value;
-     let EmailText = document.getElementById('Emailtext');
-     let PatternEmail = /^[^]+@[^]+\.[A-Z]{2,3}$/;
 
+ //Email Validation code starts here
+
+ Email.addEventListener('input', function(e){
+    const emailPattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+    let currentValue = e.target.value;
+    let EmailErr = document.getElementById('EmailError');
+    let valid = emailPattern.test(currentValue);
+
+    if(valid){
+       EmailErr.style.display = 'none'
+
+    }
+    else{
        
+        EmailErr.style.display = 'block'
+    }
+    
+ });
+let Phone = document.getElementById('phonenumber');
 
-     if (Email.match(PatternEmail))
-     {
-        loginForm.classList.add("valid");
-        loginForm.classList.remove("invalid");
-        EmailText.innerHTML= "Your Email Adress is Invalid";
-        EmailText.style.color = 'red';
-     }
-else{
-    loginForm.classList.remove("valid");
-    loginForm.classList.add("invalid");
-    EmailText.innerHTML= "Please Enter a Valid Email Address";
-    EmailText.style.color = 'red';
+Phone.addEventListener('input', function(e){
+    const phonePattern = /^\d{0,12}$/
+    let currentValue = e.target.value;
+    let PhoneErr = document.getElementById('phoneErr');
+    let valid = phonePattern.test(currentValue);
 
-} 
-if (Email ==""){
-    loginForm.classList.remove("valid");
-    loginForm.classList.add("invalid");
-    EmailText.innerHTML= "";
-    EmailText.style.color = 'red'; 
-} 
- }
+    if(valid){
+        PhoneErr.style.display = 'none'
+
+    }
+    else{
+       
+        PhoneErr.style.display = 'block'
+    }
+    
+ });
+
+ let PhoneTel = document.getElementById('tel');
+
+ PhoneTel.addEventListener('input', function(e){
+    const phonePattern = /^\d{0,12}$/
+    let currentValue = e.target.value;
+    let PhoneErr1 = document.getElementById('PhoneErr1');
+    let valid = phonePattern.test(currentValue);
+
+    if(valid){
+        PhoneErr1.style.display = 'none'
+
+    }
+    else{
+       
+        PhoneErr1.style.display = 'block'
+    }
+    
+ });
+
+ let NatID = document.getElementById('Natid');
+
+ NatID.addEventListener('input', function(e){
+    const phonePattern = /^\d{0,16}$/
+    let currentValue = e.target.value;
+    let NatidErr = document.getElementById('NatidErr');
+    let valid = phonePattern.test(currentValue);
+
+    if(valid){
+        NatidErr.style.display = 'none'
+
+    }
+    else{
+       
+        NatidErr.style.display = 'block'
+    }
+    
+ });
+
+ 

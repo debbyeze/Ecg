@@ -14,29 +14,34 @@
      <h1 class="banner txtred"><span>Wireless</span> Emergency Telemedicine Sysytem</h1>
   </div>
   <nav class="dflex bglightblue">
-<<<<<<< HEAD:addpatient.html
-    <h4 class="p-5 ml-15 bgwhite"><a href="./addpatient.html">Personal Information</a></h4>
-    <h4 class="p-5 ml-15"><a href="./index.html">Patient Contact Person</a></h4>
-=======
+
+    <h4 class="p-5 ml-15 bgwhite"><a href="./contactperson.html">Personal Information</a></h4>
+    <h4 class="p-5 ml-15"><a href="./">Patient Contact Person</a></h4>
+
     <h4 class="p-5 ml-15 bgwhite"><a href="addpatient.html">Personal Information</a></h4>
-    <h4 class="p-5 ml-15"><a href="contactperson.html">Patient Contact Person</a></h4>
->>>>>>> 433a26bfae09cbd65395f8d9846f70290476c1f5:pages/addpatient.html
+    <h4 class="p-5 ml-15"><a href="./contactperson.html">Patient Contact Person</a></h4>
+
   </nav>
 </header>
 <main>
 <section>-
  <div class="form ">
-<<<<<<< HEAD:addpatient.html
-   <form action="./dashboard.html" method="get" onsubmit="validateForm()" id="personalinfo login-form">
-=======
+
+   <form action="./dashboard.html" method="get" onsubmit="validateForm()" id="personalinfo">
+
    <form action="/pages/contactperson.html" method="get" onsubmit="validateForm()" id="personalinfo">
->>>>>>> 433a26bfae09cbd65395f8d9846f70290476c1f5:pages/addpatient.html
+
         <fieldset class="lightblue">
            <legend>Personal Information</legend>
       <div class="container">
        <div>
            <label for="id">National ID</label>
-           <input type="number" id="id" minlength="9" required>
+           <div id="input-wrap">
+            <div><input type="number" id="Natid" minlength="9" required></div>  
+            <div>  <p id="NatidErr">Enter a valid National ID</p></div> 
+            </div>
+           
+          
         </div>
          <div>
             <label for="gender">Gender</label>
@@ -47,12 +52,18 @@
       </div>
          <div>
            <label for="mobile" class="phonetext">Mobile</label>
-           <input type="tel" id="mobile" class="phonenumber">
+
+           <div id="input-wrap">
+            <div><input type="tel"  id="phonenumber"></div>  
+            <div> <p id="phoneErr">Enter a Valid Phone Number</p></div> 
+            </div> 
         </div>
-        <div>
+        <div class="input-control"> 
            <label for="email">Email</label>
-           <input type="email" id="email" placeholder="example@gmail.com" onkeydown="validation()">
-           <p id="Emailtext"></p>
+          <div id="input-wrap">
+          <div><input type="text" id="email" placeholder="example@gmail.com"></div>  
+          <div> <p id="EmailError">Invalid Email Address</p></div> 
+          </div> 
         </div>
       <div>
        <label for="marital">Marital status</label>
@@ -79,17 +90,26 @@
       <div class="container">
        <div>
            <label for="firstname">First Name</label>
-           <input type="text" id="firstname" placeholder="Deborah" required>
-           <p  id="usernameErr">Please Enter a valid First name</p>
+           <div id="input-wrap">
+            <div><input type="text" id="firstname" placeholder="First Name" required></div>  
+            <div>  <p  id="usernameErr">Please Enter a valid First name</p></div> 
+            </div> 
+
         </div>
          <div>
            <label for="lastname">Last Name</label>
-           <input type="text" id="lastname" placeholder="Ezenwankwo" required>
-           <p  id="usernameErr1">Please Enter a valid Last name</p>
+           <div id="input-wrap">
+            <div> <input type="text" id="lastname" placeholder="Last Name" required></div>  
+            <div><p  id="usernameErr1">Please Enter a valid Last name</p></div> 
+            </div>
+
         </div>
          <div>
            <label for="tel">Telephone</label>
-           <input type="tel" id="tel" >
+           <div id="input-wrap">
+            <div><input type="tel" id="tel" ></div>  
+            <div><p id="PhoneErr1"> Enter a valid Phone Number</p></div> 
+            </div>
         </div>
         <div>
            <label for="date">Date of Birth</label>

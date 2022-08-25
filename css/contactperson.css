@@ -24,3 +24,10 @@ flex: 1;
 position: relative !important;
 bottom: 0px;
 }
+#firstNameErr{
+  font-size: 9px;
+  color: red;
+  display: none;
+  margin: auto;
+  padding-bottom: 10px;
+}
