@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+ min-height: 100vh;
+}
 main{
 	background-image:linear-gradient(to right, #c7dcfa ,  #8cc5e6 );
 }
