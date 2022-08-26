@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/utility.css">
-    <link rel="stylesheet" href="/pages/addpatient.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/addpatient.css">
     <title>Add Patient</title>
 </head>
 <body class="bglighterblue">
@@ -37,8 +37,8 @@
          </select>
       </div>
          <div>
-           <label for="mobile">Mobile</label>
-           <input type="tel" id="mobile" >
+           <label for="mobile" class="phonetext">Mobile</label>
+           <input type="tel" id="mobile" class="phonenumber">
         </div>
         <div>
            <label for="email">Email</label>
@@ -70,10 +70,12 @@
        <div>
            <label for="firstname">First Name</label>
            <input type="text" id="firstname" placeholder="Deborah" name="txtFname" required>
+           <p  id="usernameErr">Please Enter a valid First name</p>
         </div>
          <div>
            <label for="lastname">Last Name</label>
            <input type="text" id="lastname" placeholder="Ezenwankwo" name="txtLname" required>
+            <p  id="usernameErr1">Please Enter a valid Last name</p>
         </div>
          <div>
            <label for="tel">Telephone</label>
@@ -135,7 +137,7 @@
          </div>
           <div>
            <label for="street">Street</label>
-           <input type="text" id="street" name="txtStr">
+           <input type="text" id="street userName" name="txtStr">
         </div>
       </div>
       <div class="container">
@@ -202,7 +204,7 @@
 </section>
    <div class="submitbtn">
       <input type="button" value="Clear" class="bglightblue txtblue">
-      <input type="submit" value="Save" class="bglightblue txtblue" form="personalinfo">
+      <input type="submit" value="Save" class="bglightblue txtblue" form="personalinfo" class = "Checked">
    </div>
 
 <div id="myModal" class="modal">
@@ -218,5 +220,6 @@
 <footer class="bglightblue dflex jcc">Developed in Computer science Department, Faculty of Science, Rivers state University</footer>
 </main>
     <script src="/pages/addpatient.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
