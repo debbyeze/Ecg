@@ -25,11 +25,15 @@
 <main>
 <section>-
  <div class="form ">
+<<<<<<< HEAD:addpatient.html
 
    <form action="./dashboard.html" method="get" onsubmit="validateForm()" id="personalinfo">
 
    <form action="/pages/contactperson.html" method="get" onsubmit="validateForm()" id="personalinfo">
 
+=======
+   <form action="/sever/sever.php" method="post" onsubmit="validateForm()" id="personalinfo">
+>>>>>>> 5cfa97d (php):pages/addpatient.html
         <fieldset class="lightblue">
            <legend>Personal Information</legend>
       <div class="container">
@@ -44,7 +48,7 @@
         </div>
          <div>
             <label for="gender">Gender</label>
-         <select id="gender" required>
+         <select id="gender" required name="txtGender">
             <option value="male" >Male</option>
             <option value="female">Female</option>
          </select>
@@ -59,21 +63,26 @@
         </div>
         <div class="input-control"> 
            <label for="email">Email</label>
+<<<<<<< HEAD:addpatient.html
           <div id="input-wrap">
           <div><input type="text" id="email" placeholder="peaceewor@gmail.com"></div>  
           <div> <p id="EmailError">Invalid Email Address</p></div> 
           </div> 
+=======
+           <input type="email" id="email" placeholder="example@gmail.com" name="txtEmail">
+>>>>>>> 5cfa97d (php):pages/addpatient.html
         </div>
       <div>
        <label for="marital">Marital status</label>
       <select id="marital">
-         <option value="married" >Married</option>
-         <option value="single">Single</option>
-         <option value="divorced">Divorced</option>
+         <option value="married" name="txtMarital">Married</option>
+         <option value="single" name="txtMarital">Single</option>
+         <option value="divorced" name="txtMarital">Divorced</option>
       </select>
       </div>
        <div>
        <label for="blood">Blood type</label>
+<<<<<<< HEAD:addpatient.html
       <select id="blood" required>
          <option valjue="ominus" >O-</option>
          <option value="oplus">O+</option>
@@ -83,12 +92,24 @@
          <option value="aminus">A-</option>
          <option value="bplus">B+</option>
          <option value="bminus">B-</option>
+=======
+      <select id="blood" name="txtBlood" required>
+         <option value="ominus" name="txtBlood">O-</option>
+         <option value="oplus" name="txtBlood">O+</option>
+         <option value="abplus" name="txtBlood">AB+</option>
+         <option value="abminus" name="txtBlood">AB-</option>
+         <option value="aplus" name="txtBlood">A+</option>
+         <option value="aminus" name="txtBlood">A-</option>
+         <option value="bplus" name="txtBlood">B+</option>
+         <option value="bminus" name="txtBlood">B-</option>
+>>>>>>> 5cfa97d (php):pages/addpatient.html
       </select>
       </div>
       </div>
       <div class="container">
        <div>
            <label for="firstname">First Name</label>
+<<<<<<< HEAD:addpatient.html
            <div id="input-wrap">
             <div><input type="text" id="firstname" placeholder="Peace Ewor" required></div>  
             <div>  <p  id="usernameErr">Please Enter a valid First name</p></div> 
@@ -109,10 +130,21 @@
             <div><input type="tel" id="tel" ></div>  
             <div><p id="PhoneErr1"> Enter a valid Phone Number</p></div> 
             </div>
+=======
+           <input type="text" id="firstname" placeholder="Deborah" name="txtFname" required>
+        </div>
+         <div>
+           <label for="lastname">Last Name</label>
+           <input type="text" id="lastname" placeholder="Ezenwankwo" name="txtLname" required>
+        </div>
+         <div>
+           <label for="tel">Telephone</label>
+           <input type="tel" id="tel" name="txtPhone" >
+>>>>>>> 5cfa97d (php):pages/addpatient.html
         </div>
         <div>
            <label for="date">Date of Birth</label>
-           <input type="date" id="date" required>
+           <input type="date" id="date" name="txtDob" required>
         </div>
         <div>
        <label for="doctor">Doctor</label>
@@ -125,7 +157,11 @@
       </div>
        <div>
            <label for="dept">Department</label>
+<<<<<<< HEAD:addpatient.html
            <input type="text" id="dept userName">
+=======
+           <input type="text" id="dept" name="txtDept">
+>>>>>>> 5cfa97d (php):pages/addpatient.html
         </div>
         <!-- <div>
            <label for="pass">Password</label>
@@ -138,7 +174,7 @@
          <div class="container">
            <div>
             <label for="country">Country</label>
-            <select id="country" required>
+            <select id="country" name="txtCountry" required>
             <option value="Egypt" >Egypt</option>
             <option value="South africa">South africa</option>
             <option value="Nigeria">Nigeria</option>
@@ -152,7 +188,7 @@
           </div>
          <div>
             <label for="city">City</label>
-         <select id="city">
+         <select id="city" name="txtCity">
             <option value="lagos" >lagos</option>
             <option value="port harcourt">port harcourt</option>
             <option value="abuja">abuja</option>
@@ -166,7 +202,11 @@
          </div>
           <div>
            <label for="street">Street</label>
+<<<<<<< HEAD:addpatient.html
            <input type="text" id="street userName">
+=======
+           <input type="text" id="street" name="txtStr">
+>>>>>>> 5cfa97d (php):pages/addpatient.html
         </div>
       </div>
       <div class="container">
