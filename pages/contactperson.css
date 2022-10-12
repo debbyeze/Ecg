@@ -1,0 +1,26 @@
+body{
+ max-height: 100vh;
+}
+main{
+height: 81.5vh;
+}
+.form-container{
+justify-content:center;
+align-items: center;
+flex-wrap: wrap;
+}
+.container{
+flex: 2;
+margin: 20px;
+}
+fieldset{
+  box-shadow: 5px 5px 5px #98c0f7;
+
+}
+.image-container{
+flex: 1;
+}
+.submitbtn{
+position: relative !important;
+bottom: 0px;
+}

@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    /* border: 3px solid red; */
+    background-color:rgb(152, 203, 247);
+        width: auto;
+    /* overflow: y; */
+    height: 100vh;
+}
+*{
+
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.first_container{
+    align-items: flex-end;
+    border: 3px solid rgb(20, 124, 216);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:rgb(27, 143, 245);    
+    
+}
+.Head_container{
+    display: inline-flex;
+    background-color:rgb(152, 203, 247);
+    padding-top: 30px;
+    width: 1360px;
+    /* border: ; */
+}
+
+.search{
+    margin-left: 10px;
+}
+
+option{
+    background-color: rgb(152, 203, 247);
+    
+}
+
+select{
+    padding-right: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 15px;
+}
+
+.placeholder{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 30px;
+}
+
+.searchsubmit{
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.patientsubmit{
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: red;
+    font-size: 15px;
+}
+
+.exit{
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.delete{
+    align-items: center;
+    padding-left: 31.5px;
+    padding-right: 31.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+.found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  hr {
+    flex: 1;
+    border: none;
+    height: 2px;
+    background: rgb(20, 124, 216);
+  }
+
+
+  legend{
+    padding-left: 31.5px;
+    padding-right: 31.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;    
+    margin-left:40% ;
+    background-color:rgb(101, 181, 250);
+    color:rgb(10, 53, 90);
+    border: 1px solid rgb(10, 53, 90);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 5px;
+
+  }
+   
+  
+  
+  /* .style{
+    overflow-y: auto ;
+    height: 100%;
+    width: 30vw;
+  } */
+  table{
+    background-color:rgb(20, 124, 216);
+    
+  }
+
+  th{
+    /* padding: 20px; */
+    padding-left: 10px;
+    padding-right: 100px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: silver;
+    color: black;
+  }
+
+  td{
+    padding: 20px;
+  }
+
+  tr:hover{
+    background-color: rgb(230, 127, 10);
+    color: black;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+  }
+  footer > h3{
+    text-align: center;
+    background-color:rgb(87, 167, 238);
+    width: 100%;
+  }
+
+  .banner{
+    font-size: 2em;
+    text-align: left;
+    color: red;
+  }
+  .banner> span{
+    color:black;
+  }
+  .first_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .homeButton{
+    border: none;
+    color: #0d346b;
+    border-radius: 2px;
+    padding: 5px 10px;
+  }

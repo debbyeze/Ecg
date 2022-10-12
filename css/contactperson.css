@@ -1,3 +1,6 @@
+.banner{
+font-size: 2em;
+}
 body{
  max-height: 100vh;
 }
@@ -36,4 +39,16 @@ bottom: 0px;
 }
 #firstname1{
   width: 262px;
+}
+.first_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+.homeButton{
+  border: none;
+  color: #0d346b;
+  border-radius: 2px;
+  padding: 5px 10px;
 }

@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/utility.css">
-    <link rel="stylesheet" href="./css/addpatient.css">
-    <link rel="stylesheet" href="./css/contactperson.css">
+    <link rel="stylesheet" href="/utility.css">
+    <link rel="stylesheet" href="/pages/addpatient.css">
+    <link rel="stylesheet" href="/pages/contactperson.css">
     <title>Patient Contact Person</title>
 </head>
 <body>
 <header class="bglightblue">
-   <div class="headerHead">
-      <h1 class="banner txtred"><span>Talking </span> Heart</h1>
-      <a href="./index.html"> <button class="homeButton">Home</button></a>   
-   </div>
+  <div class="p-5">
+     <h1 class="banner txtred"><span>Wireless</span> Emergency Telemedicine Sysytem</h1>
+  </div>
   <nav class="dflex bglightblue">
     <h4 class="p-5 ml-15 "><a href="addpatient.html">Personal Information</a></h4>
     <h4 class="p-5 ml-15 bgwhite"><a href="contactperson.html">Patient Contact Person</a></h4>
@@ -32,28 +31,16 @@
         </div>
     <div class="container">
         <div>
-         <div><label for="id">National ID</label></div>  
-         <div id="wrapDiv">
-            <input type="number" id="Nattid" minlength="9" required>
-            <p id="Natiderr">Please Enter a Valid National ID</p>
-         </div>  
+           <label for="id">National ID</label>
+           <input type="number" id="id" minlength="9" required>
         </div>
         <div>
-         <div><label for="firstname">First Name</label></div>  
-          
-         <div id="wrapDiv">
-            <input type="text" placeholder="Peace" required id="firstname1">
-            <p id="firstNameErr">Enter a valid First name</p>
-         </div>  
+           <label for="firstname">First Name</label>
+           <input type="text" id="firstname" placeholder="Deborah" required>
         </div>
-        
          <div>
-            <div><label for="lastname">Last Name</label></div>  
-            <div id="wrapDiv">
-               <input type="text" id="lastname" placeholder="LEwor" required>
-               <p id="LastNameErr">Enter a valid Last name</p>
-            </div>  
-           
+           <label for="lastname">Last Name</label>
+           <input type="text" id="lastname" placeholder="Ezenwankwo" required>
         </div>
         <div>
            <label for="date">Date of Birth</label>
@@ -70,11 +57,8 @@
     </div>
     <div class="container">
          <div>
-            <div> <label for="tel">Phone number</label></div>  
-            <div id="wrapDiv">
-               <input type="tel" id="tel" >
-               <p id="numberror">Enter a Valid Phone Number</p>
-        </div>
+           <label for="tel">Phone number</label>
+           <input type="tel" id="tel" >
         </div>
          <div>
             <label for="country">Country</label>
@@ -137,6 +121,6 @@
 </div>
 
 <footer class="bglightblue dflex jcc">Developed in Computer science Department, Faculty of Science, Rivers state University</footer>
-<script src="./scriptContact.js"></script>
+<script src="/pages/addpatient.js"></script>
 </body>
 </html>

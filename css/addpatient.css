@@ -1,3 +1,4 @@
+
 @media only screen and (max-width:580px){
 main{
  position: relative;
@@ -29,7 +30,7 @@ nav h4{
   font-weight: 500;
 }
 .banner{
-  font-size: 1.2rem;
+  font-size: 2em;
   text-align: left;
 }
 .banner> span{
@@ -210,3 +211,156 @@ display: block;
   display: none;
   margin: auto;
  }
+ .homeButton{
+   border: none;
+   color: #0d346b;
+   border-radius: 2px;
+   padding: 5px 10px;
+ }
+ .headerHead{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 2px 15px;
+   padding: 10px;
+ }
+ /* Waveform Code starts here  */
+#waveformsP{
+  color: red;
+  font-weight: 600;
+}
+.form1{
+  display: block; 
+  }
+  #WaveformSection{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 10px;
+  }
+  .waveformtop1{
+    padding-bottom: 50px;
+  }
+  #waveFieldtop{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    
+    
+  }
+  #waveformsq{
+    color: #000;
+    font-weight: 600;
+  }
+  #waveformtop1{
+    display: flex;
+    flex-direction: column;
+  }
+  #heartbeat{
+    width: 100%;
+    height: 250px;
+  }
+  .PatientBTN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .patientBTN1 > button{
+   background-color: #bacde7;
+   color: #0d346b;
+   margin: 5px;
+   width: 100px;
+   border: 1px solid #0d346b;
+  }
+  .fieldsetDivs{
+    display: flex;
+    flex-direction: column;
+  }
+  .fieldsetInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px;
+  }
+  #fieldsetPatient{
+    margin: 0;
+  }
+ .fieldsetPatient > fieldset{
+   width: 100px;
+   height: 130px;
+   margin: 5px;
+   
+ }
+ #fieldsetvitals{
+   font-size: 11px;
+   color: #0d346b;
+   font-weight: 600;
+ }
+ #contentFieldset{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .container2{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .container2 > input{
+  font-size: 2em;
+  font-weight: 700;
+  width: 80px;
+  margin-top: -20px;
+ }
+
+ .vitalsInput2{
+   display: flex;
+   margin-top: -40px;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+ #contentFieldset1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+ }
+ .container3 > input{
+  font-size: 2em;
+  font-weight: 700;
+  width: 120px;
+  margin-top: -20px;
+ }
+
+.vitalsConnect{
+  display: flex;
+  flex-direction: column;
+}
+.vitalsConnect1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#contactfield{
+  margin-top: -45px;
+  margin: auto;
+}
+#vitalsNameP{
+  font-size: 11px;
+   color: red;
+   background-color: #fefefe;
+   font-weight: 600;
+   padding: 5px 35px 5px 15px;
+}
+#vitalsConnectInput{
+  width:150px;
+  height: 35px;
+}
+.vitalsConnect1{
+  margin-top: -20px;
+}
+.vitalsConnectbtn{
+  margin-top: -15px;
+}
+/* //Search Page starts here */
+ 

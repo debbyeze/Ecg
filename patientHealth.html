@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/addpatient.css">
+    <title>Add Patient</title>
+</head>
+<body class="bglighterblue">
+<header class="bglightblue">
+  <div class="headerHead">
+    <h1 class="banner txtred"><span>Talking </span> Heart</h1>
+    <a href="./index.html"> <button class="homeButton">Home</button></a>   
+ </div>
+  <nav class="dflex bglightblue">
+
+    <!-- <h4 class="p-5 ml-15 bgwhite"><a href="./contactperson.html">Personal Information</a></h4>
+    <h4 class="p-5 ml-15"><a href="./">Patient Contact Person</a></h4>
+
+    <h4 class="p-5 ml-15 bgwhite"><a href="addpatient.html">Personal Information</a></h4>
+    <h4 class="p-5 ml-15"><a href="./contactperson.html">Patient Contact Person</a></h4> -->
+
+  </nav>
+</header>
+<main>
+<section id="WaveformSection">
+ <div class="form1 ">
+
+   <form action="./dashboard.html" method="get" onsubmit="validateForm()" id="personalinfo">
+
+   <form action="/pages/contactperson.html" method="get" onsubmit="validateForm()" id="patientWaveform">
+
+        <fieldset class="lightblue" id="waveformtop1">
+           <legend id="waveformsP">Patient Waveforms</legend>
+           <div>
+            <fieldset id="waveFieldtop">
+              <legend id="waveformsq">ECG Waveform</legend>
+            
+         <img src="./images/heartbeat.jpg" alt="Heartbeat image" srcset="" id="heartbeat" >
+        
+         </fieldset>
+           </div>
+          
+<div class="PatientBTN">
+  <div class="patientBTN1"><button>plot</button></div>
+  <div class="patientBTN1"><button>UDP</button></div>
+  <div class="patientBTN1"><button>ON</button></div>
+  <div class="patientBTN1"><button>OFF</button></div>
+</div>
+        </fieldset>
+        
+      </form> 
+       
+ </div>
+
+ <aside>
+        <fieldset>
+          <legend id="waveformsP">Vital Signs</legend>
+          <div class="fieldsetDivs">
+            <div class="fieldsetInput">
+              <div class="fieldsetPatient">
+                <fieldset id="contentFieldset">
+                  <legend id="fieldsetvitals">Temperature(<sup>0</sup>C)</legend>
+                  <div class="container2">
+                    <input type=" ">
+                  </div>
+                  
+                </fieldset>
+              </div>
+              <div class="fieldsetPatient">
+                <fieldset id="contentFieldset">
+                  <legend id="fieldsetvitals">HeartRate(bpm)</legend>
+                  <div class="container2">
+                    <input type=" ">
+                    </div>
+                </fieldset>
+              </div>
+              <div class="fieldsetPatient">
+                <fieldset id="contentFieldset">
+                  <legend id="fieldsetvitals">SP02(%)</legend>
+                  <div class="container2">
+                    <input type=" ">
+                    </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="vitalsInput2">
+              <div class="fieldsetPatient">
+                <fieldset id="contentFieldset1">
+                  <legend id="fieldsetvitals">Blood Pressure(mmHg)</legend>
+                  <div class="container3">
+                    <input type=" ">
+                    </div>
+                </fieldset>
+              </div>
+                  <div class="fieldsetPatient">
+                <fieldset id="contentFieldset1">
+                  <legend id="fieldsetvitals">Respiration(breath/min)</legend>
+                  <div class="container3">
+                    <input type=" ">
+                    </div>
+                </fieldset>
+              </div>
+              </div>
+            </div>
+        </fieldset>
+
+
+        <fieldset id="contactfield">
+        <legend id="waveformsP">Connect</legend>
+      <div class="vitalsConnect">
+        <div class="vitalsConnect1">
+          <div> <label for="Connection" id="fieldsetvitals">Connection Type</label></div>
+         <div><select name="" id="vitalsConnectInput" style="font-size: 11px; font-weight: 600; color: #0d346b;">
+           <option value="">Patient Name</option>
+         </select></div>
+         <div><div class="patientBTN1"><button>Connect</button></div></div>
+        </div>
+        <div class="vitalsConnect1">
+          <div><label for="" id="vitalsNameP">Name</label></div>
+          <div><input type=" " id="vitalsConnectInput"> </div>
+          <div> </div>
+        </div>
+        <div class="PatientBTN vitalsConnectbtn">
+          <div class="patientBTN1"><button>Save</button></div>
+          <div class="patientBTN1"><button>Pause</button></div>
+          <div class="patientBTN1"><button>Stop</button></div>
+        </div>
+      </div>
+        </fieldset>
+ </aside>
+</div>
+</section>
+  
+
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="dflex jcc">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Patient Form Saved!</p>
+  </div>
+  </div>
+</div>
+
+<footer class="bglightblue dflex jcc">Developed in Computer science Department, Faculty of Science, Rivers state University</footer>
+</main>
+    <script src="/pages/addpatient.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
