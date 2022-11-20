@@ -67,7 +67,11 @@ $rs = mysqli_query($con, $sql);
 if($rs)
 {
 	echo "Contact Records Inserted";
+<<<<<<< HEAD
 >>>>>>> 5cfa97d (php)
+=======
+>>>>>>> d008c39e3e6ae6fef6d332068f716598c0503fc8
+>>>>>>> 29dc37c113286836bef7c8e026f64a3d311680d9
 }
 
 ?>
